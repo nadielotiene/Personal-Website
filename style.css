@@ -1,0 +1,114 @@
+body, html {
+    color:#333;
+    margin: 0;
+    height: 110vh;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    background-color:orangered;
+    padding-bottom: 100%;
+}
+
+.full-card {
+    background-color: rgb(209, 235, 252);
+    height: 100vh;
+    margin: 5%;
+    border: black solid 2px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 0 #333;
+    padding-bottom: 100%;
+}
+
+.main-card, .about  {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-top: 20%;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+button {
+    /* margin: 5%; */
+    border: black solid 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0 #333;
+}
+
+button:hover {
+    box-shadow: 3px 3px 0 #333;
+
+}
+
+hr {
+    border: 0;
+    border-radius: 15px;
+    background-color: #777;
+    height: 25rem;
+    width: 5px;
+    margin: 0;
+}
+
+.code-slash {
+    width: 20rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* .socials-cards {
+    background-color: rgb(209, 235, 252);
+    border: black solid 2px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 #333;
+    width: 150px;
+    height: 150px;
+} */
+
+.socials-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.socials {
+    width: 40px;
+}
+
+.small {
+    color: #666;
+}
