@@ -21,6 +21,7 @@ body, html {
 }
 
 .main-card, .about  {
+    height: 51vh;
     margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
@@ -29,26 +30,32 @@ body, html {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 4rem;
     margin: 0;
     padding-top: 20%;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 2rem;
 }
 
-button {
-    /* margin: 5%; */
+/* @media screen and (max-width: 800px) {
+    p {
+        font-size: 2vw;
+    }
+} */
+
+/* button {
+    margin: 5%;
     border: black solid 1px;
     border-radius: 5px;
     box-shadow: 1px 1px 0 #333;
-}
+} */
 
-button:hover {
+/* button:hover {
     box-shadow: 3px 3px 0 #333;
 
-}
+} */
 
 hr {
     border: 0;
@@ -66,7 +73,7 @@ hr {
 .about {
     display: flex;
     flex-direction: column;
-    padding: 0 10rem;
+    padding: 0 5rem;
     text-align: center;
 }
 
@@ -77,32 +84,48 @@ hr {
     text-align: center;
 }
 
+.skills-section {
+    display: grid;
+    /* align-self: center; */
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 25px;
+}
+
+.skills-cards {
+    background-color:#FFF;
+    border: black solid 2px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 #333;
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+    padding-top: 5px;
+}
+
+.skills-icons {
+    width: 80px;;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
     padding: 0 10rem;
     text-align: center;
+    margin-top: 50px;
 }
 
 footer {
     text-align: center;
 }
 
-/* .socials-cards {
-    background-color: rgb(209, 235, 252);
-    border: black solid 2px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 0 #333;
-    width: 150px;
-    height: 150px;
-} */
-
 .socials-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 35px;
+    margin: 35px 0;
 }
 
 .socials {
