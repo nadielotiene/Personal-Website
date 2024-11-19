@@ -1,22 +1,20 @@
 body, html {
     color:#444;
     margin: 0;
-    height: 110vh;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     background-color:orangered;
-    padding-bottom: 100%;
 }
 
 .full-card {
     background-color: rgb(209, 235, 252);
-    height: 100vh;
-    margin: 6%;
+    position: relative;
+    overflow: hidden;
+    margin: 3% 6% 6% 3%;
     border: black solid 2px;
     border-radius: 20px;
     box-shadow: 25px 25px 0 #333;
-    padding-bottom: 100%;
 }
 
 .main-card, .about  {
@@ -31,7 +29,10 @@ body, html {
 
 @media screen and (min-width: 0px) {
     .code-slash {
-        height: 8rem;
+        width: 8rem;
+    }
+    p {
+        font-size: 0.7rem;
     }
 }
 
@@ -45,10 +46,10 @@ body, html {
         font-size: 1.5rem;
     }
     p {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .code-slash {
-        height: 10rem;
+        width: 10rem;
     }
 }
 
@@ -62,10 +63,10 @@ body, html {
         font-size: 1.7rem;
     }
     p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .code-slash {
-        height: 15rem;
+        width: 15rem;
     }
 }
 
@@ -82,21 +83,9 @@ body, html {
         font-size: 1rem;
     }
     .code-slash {
-        height: 20rem;
+        width: 20rem;
     }
 }
-
-/* button {
-    margin: 5%;
-    border: black solid 1px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 0 #333;
-} */
-
-/* button:hover {
-    box-shadow: 3px 3px 0 #333;
-
-} */
 
 hr {
     border: 0;
@@ -114,6 +103,38 @@ hr {
     text-align: center;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    text-align: center;
+}
+
+.projects-section {
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+    margin-top: 25px;
+}
+
+.project-cards {
+    background-color:#FFF;
+    border: black solid 2px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 #333;
+    max-width: 23rem;
+    max-height: 19rem;;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 25px 5px;
+}
+
+.projects-icons {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -122,22 +143,10 @@ hr {
 }
 
 .skills-section {
-
-    /* display: flex;
-    align-self: center;
-    justify-content: space-around;
-    flex-wrap: wrap; */
-
     display: grid;
-    /* align-self: center; */
     justify-content: center;
-    /* align-content: start; */
     gap: 5px;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    /* grid-template-rows: 1fr 1fr; */
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    /* grid-template-rows: repeat(auto-fill, minmax(500px, 1fr)); */
-    /* grid-template-rows: repeat(auto-fill, 100px); */
     margin-top: 25px;
 }
 
@@ -145,15 +154,15 @@ hr {
     background-color:#FFF;
     border: black solid 2px;
     border-radius: 20px;
-    box-shadow: 5px 5px 0 #222;
-    width: 9rem;
-    height: 9rem;
+    box-shadow: 5px 5px 0 #333;
+    max-width: 7rem;
+    height: 6.5rem;
     margin-top: 25px;
     padding-top: 5px;
 }
 
 .skills-icons {
-    width: 80px;
+    max-width: 80px;
 }
 
 .contact {
@@ -180,6 +189,10 @@ footer {
     width: 40px;
 }
 
+.linkedin {
+    fill: #333;
+}
+
 .small {
-    color: #666;
+    color: "red";
 }
