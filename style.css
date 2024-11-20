@@ -29,7 +29,7 @@ body, html {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 h1 {
@@ -40,9 +40,17 @@ h1 {
 
 h2 {
     font-size: clamp(1.5rem, 1.7 + 5vw, 2rem);
-    border: 2px dashed #f33;
+    border: 2px dashed #888;
     border-style: dashed none none none;
-    width: 100vw;
+    padding-top: 2rem;
+}
+
+.hero > h2 {
+    border-style: none;
+}
+
+.about > h2 {
+    width: 100%;
 }
 
 p {
@@ -71,12 +79,12 @@ hr {
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    /* padding: 0 5rem; */
     text-align: center;
 }
 
