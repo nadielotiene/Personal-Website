@@ -17,9 +17,9 @@ body, html {
     box-shadow: 25px 25px 0 #333;
     padding: 2.5rem;
 
-    /* border: 1px solid;
+    border: 1px solid;
     padding: 10px;
-    box-shadow: 4px 4px #00A4BD, 8px 8px #FF7A59, 12px 12px #334758; */
+    box-shadow: 4px 4px #00A4BD, 8px 8px #FF7A59, 12px 12px #334758;
 }
 
 .main-card, .about  {
